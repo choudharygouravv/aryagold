@@ -29,7 +29,7 @@ app.post("/", (req, resp) => {
                 pname: req.body.pname,
                 pprice: req.body.pprice,
                 pdesc: String,
-                pimg: "http://localhost:5000/uploads/" + req.file.filename
+                pimg: "https://aryagold.onrender.com/uploads/" + req.file.filename
             })
             newData.save()
             resp.send("Data Send Succesfully")
