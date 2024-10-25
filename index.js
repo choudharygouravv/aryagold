@@ -30,7 +30,7 @@ app.post("/", (req, resp) => {
                 pid: req.body.pid,
                 pname: req.body.pname,
                 pprice: req.body.pprice,
-                pdesc: String,
+                pdesc: req.body.pdesc,
                 pimg: "https://aryagold.onrender.com/uploads/" + req.file.filename
             })
             newData.save()
